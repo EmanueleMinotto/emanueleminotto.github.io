@@ -1,0 +1,11 @@
+# Site settings
+title: Emanuele Minotto's Blog
+email: minottoemanuele@gmail.com
+description: Just another PHP developer
+baseurl: "/blog/"
+url: "http://emanueleminotto.github.io"
+twitter_username: EmanueleMinotto
+github_username:  EmanueleMinotto
+
+# Build settings
+markdown: kramdown
