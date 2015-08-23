@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-![My avatar](/avatar.jpg)
+![My avatar](/assets/avatar.jpg)
 
 Hi, I'm Emanuele and this is the new website I'm using as a blog.
 
