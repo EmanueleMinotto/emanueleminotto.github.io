@@ -4,8 +4,14 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+![My avatar](/avatar.jpg)
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+Hi, I'm Emanuele and this is the new website I'm using as a blog.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Not that kind of blog where someone write what happened during the day, but a blog where I write about my job, my ideas and my experiments.
+
+If you are just looking for my CV: [linkedin.com/in/EmanueleMinotto](https://linkedin.com/in/EmanueleMinotto)
+
+You can contact me for opinions on what you want, suggestions, critics to this blog, jobs, to report interesting links, to request links that may interest you or just to chat.
+
+See ya! :)
