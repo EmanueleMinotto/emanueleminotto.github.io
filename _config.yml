@@ -7,3 +7,4 @@ markdown: kramdown
 title: "Emanuele Minotto\u2019s Blog"
 twitter_username: EmanueleMinotto
 url: http://emanueleminotto.github.io
+permalink: /blog/:title
