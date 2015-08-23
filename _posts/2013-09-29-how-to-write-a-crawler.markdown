@@ -10,19 +10,19 @@ Some years ago I worked on a crawler called [OpenCrawler](https://github.com/Ema
 
 To start you need to learn these standards:
 
-*   [Hypertext Transfer Protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
-*   [Robots.txt exclusion standard](https://en.wikipedia.org/wiki/Robots_exclusion_standard)
-*   [RFC 3986](http://tools.ietf.org/html/rfc3986)
-*   [Document Object Model](https://en.wikipedia.org/wiki/Document_Object_Model)
-*   [Daemons](https://en.wikipedia.org/wiki/Daemon_(computing))
-*   [User agent](https://en.wikipedia.org/wiki/User_agent)
-*   [rel=”nofollow”](https://en.wikipedia.org/wiki/Nofollow)
+* [Hypertext Transfer Protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
+* [Robots.txt exclusion standard](https://en.wikipedia.org/wiki/Robots_exclusion_standard)
+* [RFC 3986](http://tools.ietf.org/html/rfc3986)
+* [Document Object Model](https://en.wikipedia.org/wiki/Document_Object_Model)
+* [Daemons](https://en.wikipedia.org/wiki/Daemon_(computing))
+* [User agent](https://en.wikipedia.org/wiki/User_agent)
+* [rel=”nofollow”](https://en.wikipedia.org/wiki/Nofollow)
 
 and I suggest to learn and implement these too:
 
-*   [An Extended Standard for Robot Exclusion](http://www.conman.org/people/spc/robots2.html)
-*   [Sitemaps](http://www.sitemaps.org/protocol.html)
-*   [Making AJAX Application Crawlable](https://developers.google.com/webmasters/ajax-crawling/docs/learn-more)
+* [An Extended Standard for Robot Exclusion](http://www.conman.org/people/spc/robots2.html)
+* [Sitemaps](http://www.sitemaps.org/protocol.html)
+* [Making AJAX Application Crawlable](https://developers.google.com/webmasters/ajax-crawling/docs/learn-more)
 
 You need a database too, MySQL or PostgreSQL should be perfect for this work, **don’t** use the filesystem or a small DBMS.
 
