@@ -81,7 +81,7 @@ A huge number of accesses to the local filesystem may slow down your application
 
 Why should you use opcode? Because opcode lets you bypass some steps an interpreted language like PHP have to do, working directly with the opcode, if you update your sources the opcode is updated automatically.
 
-![opcode](http://www.divisionlab.com/solvingmagento/wp-content/uploads/2012/02/opcode.png)
+![opcode](/assets/2013-10-03-im-not-afraid-symfony-2-performances/opcode.png)
 
 ## [Memcache](http://php.net/manual/en/book.memcache.php)
 

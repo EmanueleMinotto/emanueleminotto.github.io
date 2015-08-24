@@ -75,7 +75,7 @@ Check the [HTTP code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes), 
 
 Life with HTTP codes is not so simple, I hope you like them! :)
 
-[![HTTP Headers](/assets/2015-08-23-how-to-write-a-crawler/http-headers-status1.png)](/assets/2015-08-23-how-to-write-a-crawler/http-headers-status1.png)
+[![HTTP Headers](/assets/2013-09-29-how-to-write-a-crawler/http-headers-status1.png)](/assets/2013-09-29-how-to-write-a-crawler/http-headers-status1.png)
 
 Now that you have the content, add or update it in the archives table (if you can) and pass it to the DOM parser, there are some reasons **not** to store the content:
 
