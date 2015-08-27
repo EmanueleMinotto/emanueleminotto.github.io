@@ -97,4 +97,4 @@ This process can be separated in some other: a bot that looks for new domains in
 
 Last link I reported above is a not-so-used standard purposed by Google, imho every web 2.0 website should implement it because search engines will never become humans.
 
-_[Discussion on Hacker News](https://news.ycombinator.com/item?id=6466161)_
+_[Old discussion on Hacker News](https://news.ycombinator.com/item?id=6466161)_
