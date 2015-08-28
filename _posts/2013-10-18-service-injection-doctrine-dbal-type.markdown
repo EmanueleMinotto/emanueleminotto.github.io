@@ -19,75 +19,15 @@ I use this hack for browscaps: with the [BrowscapBundle](https://github.com/brow
 
 Our object is
 
-``` php
-// src/Acme/DemoBundle/Entity/Agent.php
-
-namespace Acme\DemoBundle\Entity;
-
-use Doctrine\ORM\Mapping as ORM;
-
-/**
- * @ORM\Table
- * @ORM\Entity
- */
-class Agent
-{
-    /**
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
-     */
-    private $id;
-
-    /**
-     * @ORM\Column(name="header", type="string")
-     */
-    private $header;
-}
-```
+<script src="https://gist.github.com/EmanueleMinotto/1d53af69176eaf336c0c.js"></script>
 
 As you can see there's nothign special: it's just an archive used to store `User-Agent` strings.
 
 With the classic way what I should do is write an external event listener (to allow automatic regeneration of entities).
 
-``` yaml
-services:
-  acme.demo_bundle.event_listener.agent_listener:
-    class: "Acme\DemoBundle\EventListener\AgentListener"
-    arguments:
-      - "@service_container"
-    tags:
-      - { name: doctrine.event_listener, event: prePersist }
-      - { name: doctrine.event_listener, event: postPersist }
-      - { name: doctrine.event_listener, event: preUpdate }
-      - { name: doctrine.event_listener, event: postUpdate }
-      - { name: doctrine.event_listener, event: postLoad }
-```
+<script src="https://gist.github.com/EmanueleMinotto/a4eb545abf4b2e6b687a.js"></script>
 
-
-``` php
-// src/Acme/DemoBundle/EventListener/ContainerListener.php
-
-namespace Acme\DemoBundle\EventListener;
-
-use Symfony\Component\DependencyInjection\ContainerInterface;
-
-class ContainerListener
-{
-    private $container;
-
-    public function __construct(ContainerInterface $container)
-    {
-        $this->container = $container;
-    }
-
-    public function getContainer()
-    {
-        return $this->container;
-    }
-}
-```
-
+<script src="https://gist.github.com/EmanueleMinotto/b9c069196561996b9446.js"></script>
 
 With this code, everytime you will persist, update or extract a Agent entity from/to related storage system it'll be converted from string to object.
 
@@ -95,96 +35,15 @@ The problem is that these callbacks will be invoked everytime and numerous event
 
 But with this hack I can write:
 
-``` yaml
-services:
-  acme.demo_bundle.event_listener.container_listener:
-    arguments:
-      – "@service_container"
-    class: "Acme\DemoBundle\EventListener\ContainerListener"
-    tags:
-      – { name: doctrine.event_listener, event: getContainer }
-```
+<script src="https://gist.github.com/EmanueleMinotto/fd666253dbf6f13d3e3c.js"></script>
 
 Doctrine ignores this event but it exists and results attached!
 
-``` php
-// src/Acme/DemoBundle/EventListener/ContainerListener.php
-
-namespace Acme\DemoBundle\EventListener;
-
-use Symfony\Component\DependencyInjection\ContainerInterface;
-
-class ContainerListener
-{
-    private $container;
-
-    public function __construct(ContainerInterface $container)
-    {
-        $this->container = $container;
-    }
-
-    public function getContainer()
-    {
-        return $this->container;
-    }
-}
-```
+<script src="https://gist.github.com/EmanueleMinotto/4a67a451e42df9c6de42.js"></script>
 
 This listener seems useless, but it's the only way for this hack because Doctrine 2 DBAL Type doesn't allow direct access to the service container but allows access to events listeners.
 
-``` php
-// src/Acme/DemoBundle/Types/BrowscapType.php
-
-namespace Acme\DemoBundle\Types;
-
-use Doctrine\DBAL\Types\Type;
-use Doctrine\DBAL\Platforms\AbstractPlatform;
-use phpbrowscap\Browscap;
-use stdClass;
-
-class BrowscapType extends Type
-{
-    public function getSqlDeclaration(array $fieldDeclaration, AbstractPlatform $platform)
-    {
-        return $platform->getVarcharTypeDeclarationSQL($fieldDeclaration);
-    }
-
-    public function convertToPHPValue($value, AbstractPlatform $platform)
-    {
-        if (is_null($value)) {
-            return null;
-        }
-
-        $listeners = $platform->getEventManager()->getListeners(‘getContainer’);
-
-        $listener = array_shift($listeners);
-        $container = $listener->getContainer();
-
-        return $container->get(‘browscap’)->getBrowser($value);
-    }
-
-    public function convertToDatabaseValue($value, AbstractPlatform $platform)
-    {
-        if ($value instanceof Browscap) {
-            return $value->getBrowser()->browser_name;
-        } elseif ($value instanceof stdClass) {
-            return $value->browser_name;
-        }
-
-        return $value;
-    }
-
-    public function getName()
-    {
-        return ‘browscap';
-    }
-
-    public function requiresSQLCommentHint(AbstractPlatform $platform)
-    {
-        return true;
-    }
-}
-```
+<script src="https://gist.github.com/EmanueleMinotto/04eeba01d889a6365801.js"></script>
 
 I use this hack to define only the events related to application flow (less events is better).
 
@@ -194,10 +53,10 @@ Let me explain the reason with one simple example: imagine that one day PHP will
 
 The same reason here: everytime you extract a value from the database you want extract it fast (hopefully you'll extract more than one records), but how can you be sure that extraction is fast if every attribute of a single record depends on external libraries and logics?
 
-A note from [@Ocramius](https://twitter.com/Ocramius):
+A note from [@Ocramius](https://twitter.com/Ocramius) (from the Doctrine Project core team):
 
-> Just a note: DBAL types are not designed for Dependency Injection.
+> DBAL types are not designed for Dependency Injection.
 >
 > We explicitly avoided using DI for DBAL types because they have to stay simple.
 >
-> We’ve been asked many many times to change this behaviour, but doctrine believes that complex data manipulation should NOT happen > within the very core of the persistence layer itself. That should be handled in your service layer.
+> We’ve been asked many many times to change this behaviour, but doctrine believes that complex data manipulation should NOT happen within the very core of the persistence layer itself. That should be handled in your service layer.
