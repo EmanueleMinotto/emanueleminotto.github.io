@@ -27,7 +27,7 @@ With the classic way what I should do is write an external event listener (to al
 
 <script src="https://gist.github.com/EmanueleMinotto/a4eb545abf4b2e6b687a.js"></script>
 
-<script src="https://gist.github.com/EmanueleMinotto/b9c069196561996b9446.js"></script>
+<script src="https://gist.github.com/EmanueleMinotto/74b9578a8785305c0c29.js"></script>
 
 With this code, everytime you will persist, update or extract a Agent entity from/to related storage system it'll be converted from string to object.
 
