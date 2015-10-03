@@ -37,7 +37,7 @@ For example:
     public function getSchemeLess($url) {
         $url = (string) $url;
 
-        return preg_replace('/^(https?:)?(\/\/.*)/i', "$1", $url);
+        return preg_replace('/^(https?:)?(\/\/.*)/i', "$2", $url);
     }
 
 What's happening here? Given an URL like *http://www.example.com*, this method will return the URL without the scheme, so *//www.example.com*. Pretty simple.
@@ -56,7 +56,7 @@ Let me take the example above again:
     public function getSchemeLess($url) {
         $url = (string) $url;
 
-        return preg_replace('/^(https?:)?(\/\/.*)/i', "$1", $url);
+        return preg_replace('/^(https?:)?(\/\/.*)/i', "$2", $url);
     }
 
 What happens if we pass an instance of a `stdClass` as `$url`? The execution will be blocked at the first implementation line.
@@ -96,6 +96,4 @@ This is more an utility:
 
 In this example, if we call `a1(new stdClass)` our stacktrace will have only one error, removing the string casting from a1 and a2 than everything until `a3` will be included in the stacktrace.
 
-### Performances
-
-Don't worry guys, casting is [only one opcode](https://3v4l.org/UIWWv/vld#tabs), is doesn't cost really anything!
+If you are afraid for the performances than don't worry, casting is [only one opcode](https://3v4l.org/UIWWv/vld#tabs), is doesn't cost really anything!
