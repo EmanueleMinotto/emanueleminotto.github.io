@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Service Injection in Doctrine DBAL Type"
-date:   2013-10-18 19:56:00
+title: "Service Injection in Doctrine DBAL Type"
+date: 2013-10-18 19:56:00
 categories: symfony2 doctrine2 dbal
 ---
 

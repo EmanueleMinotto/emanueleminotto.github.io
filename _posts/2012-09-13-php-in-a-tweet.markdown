@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "PHP in a Tweet"
-date:   2012-09-13 11:52:00
+title: "PHP in a Tweet"
+date: 2012-09-13 11:52:00
 categories: twitter php code-golf
 ---
 

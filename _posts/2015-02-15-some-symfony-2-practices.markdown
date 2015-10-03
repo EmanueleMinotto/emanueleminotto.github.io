@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Some Symfony 2 practices"
-date:   2015-02-15 03:29:00
+title: "Some Symfony 2 practices"
+date: 2015-02-15 03:29:00
 categories: symfony2 best-practice
 ---
 

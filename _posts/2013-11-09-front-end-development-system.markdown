@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "My front end development system"
-date:   2013-11-09 12:24:00
+title: "My front end development system"
+date: 2013-11-09 12:24:00
 categories: development front-end symfony2
 ---
 
