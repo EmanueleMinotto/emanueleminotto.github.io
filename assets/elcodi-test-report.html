@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Elcodi Report</title>
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+        <!--<![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body { max-width: 970px; margin: 20px auto; }
+        table { width: 100%; max-width: 100%; }
+        #top_img { margin-bottom: 20px; }
+        </style>
+    </head>
+    <body>
+        <img src="http://elcodi.io/img/elcodi.png" id="top_img">
+
+        <table class="pure-table">
+            <thead>
+                <tr>
+                    <th>repository</th>
+                    <th>build</th>
+                    <th>code quality</th>
+                    <th>hhvm</th>
+                    <th>packagist</th>
+                    <th>activity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>
+                        <a class="pure-button pure-button-primary" href="https://github.com/elcodi/elcodi">elcodi</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/elcodi/master.svg?label=unix">
+                        <img src="https://img.shields.io/appveyor/ci/mmoreram/elcodi/master.svg?label=windows">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/scrutinizer/g/elcodi/elcodi/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/hhvm/elcodi/elcodi/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/v/elcodi/elcodi.svg">
+                        <img src="https://img.shields.io/packagist/dt/elcodi/elcodi.svg">
+                    </th>
+                    <th>
+                        <img src="http://isitmaintained.com/badge/open/elcodi/elcodi.svg">
+                        <img src="http://isitmaintained.com/badge/resolution/elcodi/elcodi.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button pure-button-primary" href="https://github.com/elcodi/bamboo">bamboo</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/bamboo/master.svg?label=unix">
+                        <img src="https://img.shields.io/appveyor/ci/mmoreram/bamboo/master.svg?label=windows">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/scrutinizer/g/elcodi/bamboo/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/hhvm/elcodi/bamboo/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/v/elcodi/bamboo.svg">
+                        <img src="https://img.shields.io/packagist/dt/elcodi/bamboo.svg">
+                    </th>
+                    <th>
+                        <img src="http://isitmaintained.com/badge/open/elcodi/bamboo.svg">
+                        <img src="http://isitmaintained.com/badge/resolution/elcodi/bamboo.svg">
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Bundles</h2>
+
+        <table class="pure-table">
+            <thead>
+                <tr>
+                    <th>repository</th>
+                    <th>build</th>
+                    <th>coverage</th>
+                    <th>downloads</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/AttributeBundle">AttributeBundle</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/AttributeBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/AttributeBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/attribute-bundle.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/BannerBundle">BannerBundle</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/BannerBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/BannerBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/banner-bundle.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/CartBundle">CartBundle</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/CartBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/CartBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/cart-bundle.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/CartCouponBundle">CartCouponBundle</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/CartCouponBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/CartCouponBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/cart-coupon-bundle.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/CommentBundle">CommentBundle</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/CommentBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/CommentBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/comment-bundle.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/ConfigurationBundle">ConfigurationBundle</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/ConfigurationBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/ConfigurationBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/configuration-bundle.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/CoreBundle">CoreBundle</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/CoreBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/CoreBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/core-bundle.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/CouponBundle">CouponBundle</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/CouponBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/CouponBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/coupon-bundle.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/CurrencyBundle">CurrencyBundle</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/CurrencyBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/CurrencyBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/currency-bundle.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/EntityTranslatorBundle">EntityTranslatorBundle</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/EntityTranslatorBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/EntityTranslatorBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/entity-translator-bundle.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/GeoBundle">GeoBundle</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/GeoBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/GeoBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/geo-bundle.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/LanguageBundle">LanguageBundle</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/LanguageBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/LanguageBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/language-bundle.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/MediaBundle">MediaBundle</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/MediaBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/MediaBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/media-bundle.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/MenuBundle">MenuBundle</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/MenuBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/MenuBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/menu-bundle.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/MetricBundle">MetricBundle</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/MetricBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/MetricBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/metric-bundle.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/NewsletterBundle">NewsletterBundle</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/NewsletterBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/NewsletterBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/newsletter-bundle.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/PageBundle">PageBundle</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/PageBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/PageBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/page-bundle.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/PaymentBundle">PaymentBundle</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/PaymentBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/PaymentBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/payment-bundle.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/PluginBundle">PluginBundle</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/PluginBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/PluginBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/plugin-bundle.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/ProductBundle">ProductBundle</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/ProductBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/ProductBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/product-bundle.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/RuleBundle">RuleBundle</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/RuleBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/RuleBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/rule-bundle.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/ShippingBundle">ShippingBundle</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/ShippingBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/ShippingBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/shipping-bundle.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/SitemapBundle">SitemapBundle</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/SitemapBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/SitemapBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/sitemap-bundle.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/StateTransitionMachineBundle">StateTransitionMachineBundle</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/StateTransitionMachineBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/StateTransitionMachineBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/state-transition-machine-bundle.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/StoreBundle">StoreBundle</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/StoreBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/StoreBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/store-bundle.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/TaxBundle">TaxBundle</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/TaxBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/TaxBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/tax-bundle.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/UserBundle">UserBundle</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/UserBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/UserBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/user-bundle.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/ZoneBundle">ZoneBundle</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/ZoneBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/ZoneBundle/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/zone-bundle.svg">
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Components</h2>
+
+        <table class="pure-table">
+            <thead>
+                <tr>
+                    <th>repository</th>
+                    <th>build</th>
+                    <th>code coverage</th>
+                    <th>downloads</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/Attribute">Attribute</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/Attribute/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/Attribute/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/attribute.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/Banner">Banner</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/Banner/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/Banner/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/banner.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/Cart">Cart</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/Cart/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/Cart/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/cart.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/CartCoupon">CartCoupon</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/CartCoupon/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/CartCoupon/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/cart-coupon.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/Comment">Comment</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/Comment/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/Comment/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/comment.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/Configuration">Configuration</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/Configuration/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/Configuration/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/configuration.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/Core">Core</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/Core/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/Core/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/core.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/Coupon">Coupon</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/Coupon/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/Coupon/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/coupon.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/Currency">Currency</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/Currency/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/Currency/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/currency.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/EntityTranslator">EntityTranslator</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/EntityTranslator/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/EntityTranslator/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/entity-translator.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/Geo">Geo</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/Geo/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/Geo/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/geo.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/Language">Language</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/Language/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/Language/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/language.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/Media">Media</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/Media/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/Media/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/media.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/Menu">Menu</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/Menu/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/Menu/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/menu.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/MetaData">MetaData</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/MetaData/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/MetaData/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/metadata.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/Metric">Metric</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/Metric/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/Metric/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/metric.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/Newsletter">Newsletter</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/Newsletter/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/Newsletter/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/newsletter.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/Page">Page</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/Page/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/Page/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/page.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/Payment">Payment</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/Payment/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/Payment/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/payment.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/Plugin">Plugin</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/Plugin/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/Plugin/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/plugin.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/Product">Product</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/Product/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/Product/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/product.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/Rule">Rule</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/Rule/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/Rule/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/rule.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/Shipping">Shipping</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/Shipping/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/Shipping/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/shipping.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/Sitemap">Sitemap</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/Sitemap/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/Sitemap/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/sitemap.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/StateTransitionMachine">StateTransitionMachine</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/StateTransitionMachine/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/StateTransitionMachine/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/state-transition-machine.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/Store">Store</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/Store/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/Store/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/store.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/Tax">Tax</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/Tax/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/Tax/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/tax.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/User">User</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/User/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/User/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/user.svg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a class="pure-button" href="https://github.com/elcodi/Zone">Zone</a>
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/travis/elcodi/Zone/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/coveralls/elcodi/Zone/master.svg">
+                    </th>
+                    <th>
+                        <img src="https://img.shields.io/packagist/dt/elcodi/zone.svg">
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
