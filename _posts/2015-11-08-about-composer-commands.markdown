@@ -8,7 +8,7 @@ categories: development composer best-practice
 Recently I'm considering a not-so-common Composer feature: commands (scripts).
 
 Composer already provides some hooks, you can find the list of
-provided hooks here: https://getcomposer.org/doc/articles/scripts.md#event-names
+provided hooks here: [getcomposer.org/doc/articles/scripts.md#event-names](https://getcomposer.org/doc/articles/scripts.md#event-names)
 
 These hooks you see aren't the same commands I mean in this article, because can't
 be invoked using `composer post-install-cmd`, I'm going to list some scripts
@@ -55,7 +55,7 @@ or them aren't compatible with my codebase?
 Already introduced by https://github.com/thephpleague/skeleton [here](https://github.com/thephpleague/skeleton/commit/54f6cbc6064e56e92ab59db46f99f9ff815d055d), with this command you don't need
 to worry about which version of your testing tool is used nor where it is.
 
-Indeed reading https://getcomposer.org/doc/articles/scripts.md#writing-custom-commands :
+Indeed reading [getcomposer.org/doc/articles/scripts.md](https://getcomposer.org/doc/articles/scripts.md#writing-custom-commands) :
 
 > Note: Composer's bin-dir is pushed on top of the PATH so that binaries of dependencies are easily accessible as CLI commands when writing scripts.
 
