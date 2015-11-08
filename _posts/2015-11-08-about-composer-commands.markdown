@@ -34,11 +34,13 @@ how should I test my changes?
 > What should I do after installation?
 
 Ok, I've installed a fork of `symfony/symfony-standard` including some test-only
-changes, how can I execute these changes on my continuous integration system?
+changes, how can I execute these changes on my continuous integration system without
+calling them also on development and production?
 
 > Prevent ambiguity.
 
 Do you know that a developer could have 3 PHPUnit versions on his/her environment?
+
 Lets say he/she has:
 
 * PHPUnit v3 at `/usr/local/bin/phpunit`
@@ -46,14 +48,16 @@ Lets say he/she has:
 * PHPUnit v5 at `[project]/vendor/bin/phpunit`
 
 Which version should be used? Can these versions be used without problems or some
-or them aren't compatible with my codebase?
+of them aren't compatible with my codebase?
+
+The developer probably will use just the `phpunit` command, which of them will be
+executed?
 
 ## Commands
 
 `composer test`
 
-Already introduced by https://github.com/thephpleague/skeleton [here](https://github.com/thephpleague/skeleton/commit/54f6cbc6064e56e92ab59db46f99f9ff815d055d), with this command you don't need
-to worry about which version of your testing tool is used nor where it is.
+Already introduced by [github.com/thephpleague/skeleton](https://github.com/thephpleague/skeleton) [here](https://github.com/thephpleague/skeleton/commit/54f6cbc6064e56e92ab59db46f99f9ff815d055d), using this command you don't need to worry about which version of your testing tool is used nor where it is.
 
 Indeed reading [getcomposer.org/doc/articles/scripts.md](https://getcomposer.org/doc/articles/scripts.md#writing-custom-commands) :
 
@@ -64,17 +68,15 @@ For example if you don't want execute functional tests before having checked
 that every unitary test is executed correctly, and before of all a PSR-2 coding
 style is strictly required.
 
-```
-{
-    "scripts": {
-        "test": [
-            "phpcs src --standard=psr2 -spn",
-            "phpunit",
-            "behat"
-        ]
+    {
+        "scripts": {
+            "test": [
+                "phpcs src --standard=psr2 -spn",
+                "phpunit",
+                "behat"
+            ]
+        }
     }
-}
-```
 
 What's the version used?
 
@@ -93,16 +95,14 @@ An example of its usage? Ok, let's say we are installing a bundle on a Symfony 2
 app, adding a `app/console cache:clear` will always give an error if executed right
 after the install or the update, so we can add a command like this:
 
-```
-{
-    "scripts": {
-        "compile": [
-            "app/console -n cache:clear",
-            "app/console -n assets:install"
-        ]
+    {
+        "scripts": {
+            "compile": [
+                "app/console -n cache:clear",
+                "app/console -n assets:install"
+            ]
+        }
     }
-}
-```
 
 *The `-n` option is usually not required, but for security I always add it.*
 
@@ -116,13 +116,11 @@ And which options? The order of them?
 
 As always a simple command can solve this doubt:
 
-```
-{
-    "scripts": {
-        "check-style": [
-            "php-cs-fixer fix --config-file=.php_cs",
-            "php-formatter formatter:use:sort src"
-        ]
+    {
+        "scripts": {
+            "check-style": [
+                "php-cs-fixer fix --config-file=.php_cs",
+                "php-formatter formatter:use:sort src"
+            ]
+        }
     }
-}
-```
