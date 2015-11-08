@@ -55,7 +55,7 @@ executed?
 
 ## Commands
 
-### `composer test`
+#### composer test
 
 Already introduced by [github.com/thephpleague/skeleton](https://github.com/thephpleague/skeleton) [here](https://github.com/thephpleague/skeleton/commit/54f6cbc6064e56e92ab59db46f99f9ff815d055d), using this command you don't need to worry about which version of your testing tool is used nor where it is.
 
@@ -85,7 +85,7 @@ The priority is given to `[project]/vendor/bin/phpunit`, but if it's not include
 `~/.composer/vendor/bin/phpunit` or `/usr/local/bin/phpunit` will have the priority
 *without* changing your codebase!
 
-### `composer compile`
+#### composer compile
 
 Already introduced by Heroku [here](https://devcenter.heroku.com/articles/php-support#custom-compile-step)
 this command allows you to execute a set of steps (or a single script) without
@@ -109,7 +109,7 @@ after the install or the update, so we can add a command like this:
 Once you've finished the installation and configuration of your bundle, just run
 the `composer compile` to be sure that's installed completely.
 
-### `composer check-style`
+#### composer check-style
 
 A lot of projects started using coding standards during last years, but which tools?
 And which options? The order of them?
