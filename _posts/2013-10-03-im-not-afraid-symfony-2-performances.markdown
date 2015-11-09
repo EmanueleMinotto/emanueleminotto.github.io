@@ -4,6 +4,7 @@ title: "I'm not afraid of Symfony 2 performances"
 date: 2013-10-06 19:54:00
 categories: symfony2
 ---
+
 It's impossible to write an absolute benchmark for a PHP framework:
 
 * project code performances

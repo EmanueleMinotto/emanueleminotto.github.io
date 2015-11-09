@@ -4,6 +4,7 @@ title: "How to write a crawler"
 date: 2013-09-29 19:37:00
 categories: development search-engine
 ---
+
 Everybody knows the Googlebot, but how many of you know how it works?
 
 Some years ago I worked on a crawler called [OpenCrawler](https://github.com/EmanueleMinotto/OpenCrawler) and I learned very much from it.

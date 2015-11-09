@@ -4,6 +4,7 @@ title: "Advanced Doctrine cache in Symfony 2"
 date: 2015-02-22 13:50:00
 categories: doctrine2 symfony2
 ---
+
 This post is essentially just a tip, but considering the great usage of the [doctrine/cache](https://github.com/doctrine/cache) library (now included in `symfony/symfony-standard`!) and the number features added by [CEikermann/advcache](https://github.com/CEikermann/advcache), I think it could be really useful.
 
 The tip is: <script src="https://gist.github.com/EmanueleMinotto/262baed0af21612f640b.js"></script>
