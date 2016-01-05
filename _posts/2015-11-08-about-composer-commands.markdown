@@ -1,8 +1,8 @@
 ---
+categories: development composer best-practice
+date: 2015-11-08 11:09:00
 layout: post
 title: "About Composer commands"
-date: 2015-11-08 11:09:00
-categories: development composer best-practice
 ---
 
 Recently I'm considering a not-so-common Composer feature: commands (scripts).

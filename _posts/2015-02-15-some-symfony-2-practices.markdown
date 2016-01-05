@@ -1,8 +1,8 @@
 ---
+categories: symfony2 best-practice
+date: 2015-02-15 03:29:00
 layout: post
 title: "Some Symfony 2 practices"
-date: 2015-02-15 03:29:00
-categories: symfony2 best-practice
 ---
 
 In this post I want share some personal development practices used working with the Symfony 2 framework.

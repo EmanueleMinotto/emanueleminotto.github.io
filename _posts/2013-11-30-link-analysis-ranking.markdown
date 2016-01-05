@@ -1,8 +1,8 @@
 ---
+categories: math search-engine university
+date: 2013-11-30 17:12:00
 layout: post
 title: "Link Analysis Ranking"
-date: 2013-11-30 17:12:00
-categories: math search-engine university
 ---
 
 Some years ago I found myself making a small seminar for the course Algorithms and Data Structures II, having had very conceptual explain it in half an hour.

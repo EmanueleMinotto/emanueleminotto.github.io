@@ -1,8 +1,8 @@
 ---
+categories: development php annotations
+date: 2014-07-21 18:37:00
 layout: post
 title: "Documentation is code"
-date: 2014-07-21 18:37:00
-categories: development php annotations
 ---
 
 Finally I found a new argument, after months and months, and it's the documentation.

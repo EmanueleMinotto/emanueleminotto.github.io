@@ -1,8 +1,8 @@
 ---
+categories: php validation tips
+date: 2015-10-03 16:23:00
 layout: post
 title: "Casting: value objects, validation, trust levels & debugging"
-date: 2015-10-03 16:23:00
-categories: php validation tips
 ---
 
 A practice I'm testing in these days is to cast PHP primitives right after parameters declaration.

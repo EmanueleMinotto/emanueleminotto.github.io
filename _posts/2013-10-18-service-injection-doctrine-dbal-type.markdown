@@ -1,8 +1,8 @@
 ---
+categories: symfony2 doctrine2 dbal
+date: 2013-10-18 19:56:00
 layout: post
 title: "Service Injection in Doctrine DBAL Type"
-date: 2013-10-18 19:56:00
-categories: symfony2 doctrine2 dbal
 ---
 
 When you think of a Doctrine 2 DBAL Type you think of an atomic thing, but how can you work programmatically on this type without defining an event?
