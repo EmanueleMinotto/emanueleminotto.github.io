@@ -112,7 +112,7 @@ This is a caching HTTP reverse proxy, it's useful because gateway caches are a g
 
 The most interesting slides I found are these by [@liuggio](https://twitter.com/liuggio), I really recommend them!
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/wHBMjieyoiVxfM" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen></iframe>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/wHBMjieyoiVxfM" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #ccc; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen></iframe>
 
 > "My application is still slow!"
 
