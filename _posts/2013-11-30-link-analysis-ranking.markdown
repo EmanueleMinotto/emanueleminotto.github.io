@@ -27,7 +27,7 @@ Developed by Lawrence Page and Sergey Brin during a research project at Stanford
 
 #### Algorithm
 
-<div style="float: right">
+<div style="float:right">
     <img src="/assets/2013-11-30-link-analysis-ranking/a1.png" alt="Algorithm">
 </div>
 
