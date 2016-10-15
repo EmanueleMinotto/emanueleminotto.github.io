@@ -6714,19 +6714,19 @@ body.landing-page {
   width: 100%;
 }
 .landing-page .header-back.one {
-  background: url('/static/img/4.jpg') 50% 0 no-repeat;
+  background: url('../img/4.jpg') 50% 0 no-repeat;
   background-size: cover;
 }
 .landing-page .header-back.two {
-  background: url('/static/img/6.jpg') 50% 0 no-repeat;
+  background: url('../img/6.jpg') 50% 0 no-repeat;
   background-size: cover;
 }
 .landing-page .header-back.three {
-  background: url('/static/img/7.jpg') 50% 0 no-repeat;
+  background: url('../img/7.jpg') 50% 0 no-repeat;
   background-size: cover;
 }
 .landing-page .header-back.four {
-  background: url('/static/img/14.jpg') 50% 0 no-repeat;
+  background: url('../img/14.jpg') 50% 0 no-repeat;
   background-size: cover;
 }
 .landing-page .carousel {
