@@ -1,0 +1,35 @@
+# Welcome to Jekyll!
+
+# Website settings
+title: "Catuzzi Consulting Sas"
+description: "Catuzzi Consulting Sas."
+
+baseurl: "/"
+url: "http://127.0.0.1:4000"
+
+# author
+author:
+  email: 'info@catuzziconsulting.com'
+
+# landing page
+landing:
+  home: 'Home'
+  about: 'About'
+  career: 'Career'
+  contact: 'Contact'
+
+# blog index
+index:
+  home: 'Home'
+
+# blog img path
+img_path: '/static/img/blog'
+
+# Build settings
+encoding: "utf-8"
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
