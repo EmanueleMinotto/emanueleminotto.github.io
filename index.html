@@ -1,16 +1,14 @@
 ---
 layout: default
+excerpt_separator: <!--more-->
 ---
-<div class="home">
-    <ul class="post-list">
-        {% for post in site.posts %}
-            <li>
-                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-                <h2>
-                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                </h2>
-            </li>
-        {% endfor %}
-    </ul>
+<div id="content">
+    {% for post in site.posts %}
+        <div class="post">
+            <h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+            <p class="post-date">{{ post.date | date: "%b %-d, %Y" }}</p>
+            <!-- <p class="post-data"><span class="postauthor"><?php the_author_link(); ?></span><span class="postcategory"><?php the_category(', ') ?></span> <?php the_tags( '<span class="posttag">', ', ', '</span>'); ?> <span class="postcomment"><?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></span><?php edit_post_link('[Edit]'); ?></p> -->
+            {{ post.excerpt }}
+        </div>
+    {% endfor %}
 </div>

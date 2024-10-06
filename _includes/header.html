@@ -1,18 +1,27 @@
-<header class="site-header">
-    <div class="wrapper">
-        <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-        <nav class="site-nav">
+<div id="header">
+	<h1 id="logo"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+    <p class="description">{{ site.description }}</p>
+
+	<ul id="nav">
+        <li class="current_home">
+            <a href="{{ site.baseurl }}/">Home</a>
+        </li>
+        <li>
             <a class="page-link" href="https://twitter.com/{{ site.twitter_username }}">
                 <i class="fa fa-twitter"></i>
             </a>
+        </li>
+        <li>
             <a class="page-link" href="https://github.com/{{ site.github_username }}">
                 <i class="fa fa-github"></i>
             </a>
-            {% for page in site.pages %}
-                {% if page.title %}
-                    <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-                {% endif %}
-            {% endfor %}
-        </nav>
-    </div>
-</header>
+        </li>
+        {% for page in site.pages %}
+            {% if page.title %}
+            <li>
+                <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+            </li>
+            {% endif %}
+        {% endfor %}
+	</ul>
+</div>
