@@ -4,6 +4,14 @@ layout: default
 <div id="content">
     <div class="post">
         <h2 class="post-title">{{ page.title }}</h2>
+        <p class="post-data">
+            <span class="postcategory">
+                {% for category in page.categories %}
+                    {% unless forloop.first %},{% endunless %}
+                    {{ category }}
+                {% endfor %}
+            </span>
+        </p>
 
         {{ content }}
     </div>

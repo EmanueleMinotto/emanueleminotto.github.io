@@ -2,19 +2,18 @@
 	<h1 id="logo"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
     <p class="description">{{ site.description }}</p>
 
+    <p class="socialmedia">
+        <a href="https://github.com/EmanueleMinotto">
+            <img src="/assets/img/socialmedia/github.png" alt="GitHub" /> GitHub
+        </a>
+        <a href="https://bsky.app/profile/ema16789.bsky.social">
+            <img src="/assets/img/socialmedia/bluesky.jpg" alt="Bluesky" /> Bluesky
+        </a>
+    </p>
+
 	<ul id="nav">
         <li>
             <a href="{{ site.baseurl }}/">Home</a>
-        </li>
-        <li>
-            <a class="page-link" href="https://bsky.app/profile/ema16789.bsky.social">
-                <i class="fa-brands fa-bluesky"></i>
-            </a>
-        </li>
-        <li>
-            <a class="page-link" href="https://github.com/EmanueleMinotto">
-                <i class="fa-brands fa-github"></i>
-            </a>
         </li>
         {% for page in site.pages %}
             {% if page.title %}

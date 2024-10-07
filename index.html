@@ -7,7 +7,15 @@ excerpt_separator: <!--more-->
         <div class="post">
             <h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">{{ post.title }}</a></h2>
             <p class="post-date">{{ post.date | date: "%b %-d, %Y" }}</p>
-            <!-- <p class="post-data"><span class="postauthor"><?php the_author_link(); ?></span><span class="postcategory"><?php the_category(', ') ?></span> <?php the_tags( '<span class="posttag">', ', ', '</span>'); ?> <span class="postcomment"><?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></span><?php edit_post_link('[Edit]'); ?></p> -->
+            <p class="post-data">
+                <span class="postcategory">
+                    {% for category in post.categories %}
+                        {% unless forloop.first %},{% endunless %}
+                        {{ category }}
+                    {% endfor %}
+                </span>
+            </p>
+
             {{ post.excerpt }}
         </div>
     {% endfor %}
