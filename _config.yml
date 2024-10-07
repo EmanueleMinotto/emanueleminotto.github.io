@@ -1,10 +1,7 @@
-baseurl: ''
-description: Just another PHP developer
+baseurl: ""
+description: Just another developer
 email: minottoemanuele@gmail.com
-github_username: EmanueleMinotto
-linkedin_username: EmanueleMinotto
 markdown: kramdown
 permalink: /blog/:title
-title: "Emanuele Minotto\u2019s Blog"
-twitter_username: EmanueleMinotto
+title: "Emanuele\u2019s Blog"
 url: http://emanueleminotto.github.io
