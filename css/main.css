@@ -734,26 +734,20 @@ content:  close-quote;
 	float: left;
 	margin-right: 20px;
 }
-img.alignleft {
+.post img {
 	background: #fff;
 	border: solid 1px #d6d1c7;
 	padding: 5px;
 	margin-bottom: 15px;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
+    max-width: 508px;
 }
 .alignright {
 	float: right;
 	margin-left: 20px;
 }
-img.alignright {
-	background: #fff;
-	border: solid 1px #d6d1c7;
-	padding: 5px;
-	margin-bottom: 15px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-}
+
 .aligncenter {
 	text-align: center;
 }
