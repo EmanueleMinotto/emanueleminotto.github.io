@@ -12,13 +12,13 @@
     </p>
 
 	<ul id="nav">
-        <li>
+        <li class="{% if page.url == '/' %}current_home{% endif %}">
             <a href="{{ site.baseurl }}/">Home</a>
         </li>
-        {% for page in site.pages %}
-            {% if page.title %}
-            <li>
-                <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        {% for subpage in site.pages %}
+            {% if subpage.title %}
+            <li class="{% if page.url == subpage.url %}current_page_item{% endif %}">
+                <a class="page-link" href="{{ subpage.url | prepend: site.baseurl }}">{{ subpage.title }}</a>
             </li>
             {% endif %}
         {% endfor %}
