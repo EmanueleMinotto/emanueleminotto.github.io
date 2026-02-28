@@ -823,6 +823,10 @@ a.comment-reply-link:hover {
 #sidebar .widget {
     margin: 0 0 32px;
 }
+#sidebar .sidebar-label {
+    font-weight: normal;
+    color: #999;
+}
 #sidebar #searchform {
     position: relative;
     margin: 0;

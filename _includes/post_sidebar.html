@@ -1,0 +1,49 @@
+{% assign nav_count = 0 %}
+{% if page.previous %}
+  {% assign nav_count = nav_count | plus: 1 %}
+{% endif %}
+{% if page.next %}
+  {% assign nav_count = nav_count | plus: 1 %}
+{% endif %}
+
+{% if nav_count > 0 %}
+<div class="widget">
+  <h4 class="widgettitle">Posts</h4>
+  <ul>
+    {% if page.previous %}
+    <li><span class="sidebar-label">Previous:</span> <a href="{{ page.previous.url | prepend: site.baseurl }}" rel="prev">{{ page.previous.title }}</a></li>
+    {% endif %}
+    {% if page.next %}
+    <li><span class="sidebar-label">Next:</span> <a href="{{ page.next.url | prepend: site.baseurl }}" rel="next">{{ page.next.title }}</a></li>
+    {% endif %}
+  </ul>
+</div>
+{% endif %}
+
+{% if page.categories.size > 0 %}
+  {% assign related_count = 0 %}
+  {% for post in site.posts %}
+    {% if post.url != page.url and related_count < 5 %}
+      {% assign is_related = false %}
+      {% for cat in page.categories %}
+        {% if post.categories contains cat %}
+          {% assign is_related = true %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+      {% if is_related %}
+        {% if related_count == 0 %}
+<div class="widget">
+  <h4 class="widgettitle">Related posts</h4>
+  <ul>
+        {% endif %}
+    <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+        {% assign related_count = related_count | plus: 1 %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  {% if related_count > 0 %}
+  </ul>
+</div>
+  {% endif %}
+{% endif %}
