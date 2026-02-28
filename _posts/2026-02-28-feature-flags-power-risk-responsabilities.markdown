@@ -1,6 +1,6 @@
 ---
 categories: feature-flag product process risk quality
-date: 2026-02-28 08:00:00
+date: 2026-02-28 00:00:00
 layout: post
 title: "Feature Flags: Power, Risk and Responsibility"
 ---
