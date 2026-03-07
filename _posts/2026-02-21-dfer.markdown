@@ -1,5 +1,5 @@
 ---
-categories: lint evolution deprecations
+categories: lint evolution deprecations quality
 date: 2026-02-21 09:50:00
 layout: post
 title: "Deprecate. Fix. Enforce. Repeat."

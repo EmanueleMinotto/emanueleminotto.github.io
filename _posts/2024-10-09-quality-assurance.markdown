@@ -1,5 +1,5 @@
 ---
-categories: testing personal-development qa
+categories: testing personal-development qa quality
 date: 2024-10-09 00:00:00
 layout: post
 title: "Bye business logic, welcome Quality Assurance"
@@ -14,11 +14,11 @@ Let's switch to something more interesting... why Quality Assurance? Because sin
 
 Even if I've never found a single definition of what a QA developer should do related to web, let's say that it's a role mainly focused on everything that's related to the quality of something related to the web, so:
 
--   the quality of the user experience
--   the quality of the user interface
--   the quality of the software
--   the quality of the process to release that software
--   etc...
+- the quality of the user experience
+- the quality of the user interface
+- the quality of the software
+- the quality of the process to release that software
+- etc...
 
 This is often translated to write a requirement plan before the release of a software and the maintenance of the related tests, but I've accepted this role because I think there's more in this role.
 
@@ -33,13 +33,13 @@ Another example is **testing**, for example this is something I do daily.
 
 Testing can be done on a lot of levels:
 
--   unit testing
--   integration testing
--   API testing
--   End to End (aka. E2E) testing
--   performance testing
--   visual testing
--   etc...
+- unit testing
+- integration testing
+- API testing
+- End to End (aka. E2E) testing
+- performance testing
+- visual testing
+- etc...
 
 For sure I'll write a more detailed post about it.
 
