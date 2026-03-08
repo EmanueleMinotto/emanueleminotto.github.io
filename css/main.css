@@ -413,6 +413,10 @@ input[type="submit"]:hover {
     min-height: 600px;
     overflow: hidden;
     padding-top: 8px;
+    font:
+        normal 1.15em/1.6em 'Lora',
+        Georgia,
+        serif;
 }
 
 #content {
