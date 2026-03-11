@@ -1,5 +1,10 @@
 <div id="header">
-	<h1 id="logo"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+    <h1 id="logo">
+        <a href="{{ site.baseurl }}/"
+            ><span class="logo-full">{{ site.title }}</span
+            ><span class="logo-short">Ema’s Blog</span></a
+        >
+    </h1>
     <p class="description">{{ site.description }}</p>
 
     <!-- <p class="socialmedia">
@@ -11,16 +16,20 @@
         </a>
     </p> -->
 
-	<ul id="nav">
+    <ul id="nav">
         <li class="{% if page.url == '/' %}current_home{% endif %}">
             <a href="{{ site.baseurl }}/">Home</a>
         </li>
-        {% for subpage in site.pages %}
-            {% if subpage.title %}
-            <li class="{% if page.url == subpage.url %}current_page_item{% endif %}">
-                <a class="page-link" href="{{ subpage.url | prepend: site.baseurl }}">{{ subpage.title }}</a>
-            </li>
-            {% endif %}
-        {% endfor %}
-	</ul>
+        {% for subpage in site.pages %} {% if subpage.title %}
+        <li
+            class="{% if page.url == subpage.url %}current_page_item{% endif %}"
+        >
+            <a
+                class="page-link"
+                href="{{ subpage.url | prepend: site.baseurl }}"
+                >{{ subpage.title }}</a
+            >
+        </li>
+        {% endif %} {% endfor %}
+    </ul>
 </div>

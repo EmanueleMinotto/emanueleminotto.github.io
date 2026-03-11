@@ -923,3 +923,74 @@ a.comment-reply-link:hover {
 
 /* wordpress post formating end
 -------------------------------------------------*/
+
+/* responsive
+-------------------------------------------------*/
+.logo-short {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .logo-full {
+        display: none;
+    }
+    .logo-short {
+        display: inline;
+    }
+}
+
+@media (max-width: 979px) {
+    body {
+        width: 100%;
+    }
+
+    #content {
+        float: none;
+        width: auto;
+        margin-left: 0;
+        padding: 20px 20px 0;
+    }
+
+    #sidebar {
+        display: none;
+    }
+
+    .post-date {
+        position: static;
+        display: inline-block;
+        margin: 5px 0 0;
+        width: auto;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    .post-data {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 8px;
+        margin-bottom: 0;
+    }
+
+    .post img,
+    .highlighter-rouge {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 599px) {
+    #content {
+        padding: 15px 15px 0;
+    }
+
+    .post-title {
+        font-size: 1.4em;
+    }
+
+    .post-date,
+    .post-data {
+        display: none;
+    }
+}
+/* responsive end
+-------------------------------------------------*/
