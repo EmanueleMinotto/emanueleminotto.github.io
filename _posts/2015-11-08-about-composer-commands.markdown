@@ -10,6 +10,8 @@ Recently I'm considering a not-so-common Composer feature: commands (scripts).
 Composer already provides some hooks, you can find the list of
 provided hooks here: [getcomposer.org/doc/articles/scripts.md#event-names](https://getcomposer.org/doc/articles/scripts.md#event-names)
 
+<!--more-->
+
 These hooks you see aren't the same commands I mean in this article, because can't
 be invoked using `composer post-install-cmd`, I'm going to list some scripts
 I found useful, but before let me explain some reasons why I think they should
@@ -43,9 +45,9 @@ Do you know that a developer could have 3 PHPUnit versions on his/her environmen
 
 Lets say he/she has:
 
-* PHPUnit v3 at `/usr/local/bin/phpunit`
-* PHPUnit v4 at `~/.composer/vendor/bin/phpunit`
-* PHPUnit v5 at `[project]/vendor/bin/phpunit`
+- PHPUnit v3 at `/usr/local/bin/phpunit`
+- PHPUnit v4 at `~/.composer/vendor/bin/phpunit`
+- PHPUnit v5 at `[project]/vendor/bin/phpunit`
 
 Which version should be used? Can these versions be used without problems or some
 of them aren't compatible with my codebase?
@@ -83,7 +85,7 @@ What's the version used?
 The priority is given to `[project]/vendor/bin/phpunit`, but if it's not included
 (for example if you're testing the `prod` mode locally) than depending on your `$PATH`
 `~/.composer/vendor/bin/phpunit` or `/usr/local/bin/phpunit` will have the priority
-*without* changing your codebase!
+_without_ changing your codebase!
 
 ### composer compile
 
@@ -104,7 +106,7 @@ after the install or the update, so we can add a command like this:
         }
     }
 
-*The `-n` option is usually not required, but for security I always add it.*
+_The `-n` option is usually not required, but for security I always add it._
 
 Once you've finished the installation and configuration of your bundle, just run
 the `composer compile` to be sure that's installed completely.

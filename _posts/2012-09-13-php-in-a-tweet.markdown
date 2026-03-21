@@ -7,6 +7,8 @@ title: "PHP in a Tweet"
 
 Yesterday an ex colleague tweeted something that captured my attention:
 
+<!--more-->
+
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/php?src=hash">#php</a>&#10;function sanitize_http_protocol($link,$_protocol=&#39;http&#39;){ return $_protocol.&#39;://&#39;.array_pop(explode(&#39;://&#39;,$link)); }</p>&mdash; Stefano Azzolini (@lastguest) <a href="https://twitter.com/lastguest/status/245539785119256577">September 11, 2012</a></blockquote>
 
 So I started thinking to a Twitter-powered [code golf](http://en.wikipedia.org/wiki/Code_golf "Code golf - Wikipedia, the free encyclopedia")ing competition. Looking for other examples you can see these:
@@ -25,7 +27,7 @@ And this is a microframework created on the occasion of this "competition". It's
 
 These are three really nice examples of PHP code in a tweet. Of course you can't use these two snippets in production, but you can see that a short script isn't always an useless script or something prosy.
 
-I realized the next two examples and *would be great to see your tweets too!*
+I realized the next two examples and _would be great to see your tweets too!_
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">function array_intersect_equal($a, <a href="https://twitter.com/search?q=%24b&amp;src=ctag">$b</a>) { return array_uintersect($a, <a href="https://twitter.com/search?q=%24b&amp;src=ctag">$b</a>, function ($c, <a href="https://twitter.com/search?q=%24d&amp;src=ctag">$d</a>) { return <a href="https://twitter.com/search?q=%24c&amp;src=ctag">$c</a> == <a href="https://twitter.com/search?q=%24d&amp;src=ctag">$d</a> ? 0 : 1; }); }</p>&mdash; Emanuele Minotto (@EmanueleMinotto) <a href="https://twitter.com/EmanueleMinotto/status/246180418800472064">September 13, 2012</a></blockquote>
 

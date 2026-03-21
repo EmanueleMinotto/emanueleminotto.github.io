@@ -7,6 +7,8 @@ title: "Some Symfony 2 practices"
 
 In this post I want share some personal development practices used working with the Symfony 2 framework.
 
+<!--more-->
+
 I'm not sure them are great or almost good practices, but I find them useful and if you want suggest me some cons about using them (or some pros using other practices), then thank you. :) 
 
 ### Configuration directories

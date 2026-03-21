@@ -7,6 +7,8 @@ title: "Advanced Doctrine cache in Symfony 2"
 
 This post is essentially just a tip, but considering the great usage of the [doctrine/cache](https://github.com/doctrine/cache) library (now included in `symfony/symfony-standard`!) and the number features added by [CEikermann/advcache](https://github.com/CEikermann/advcache), I think it could be really useful.
 
+<!--more-->
+
 The tip is: <script src="https://gist.github.com/EmanueleMinotto/262baed0af21612f640b.js"></script>
 
 `doctrine_cache.providers.test` is a generic implementation of a doctrine cache, its name is based the predefined [DoctrineCacheBundle](https://github.com/doctrine/DoctrineCacheBundle) naming system.

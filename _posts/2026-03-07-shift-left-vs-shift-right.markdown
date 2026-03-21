@@ -9,6 +9,8 @@ When we talk about [Shift Left and Shift Right](https://www.redhat.com/en/topics
 In reality, they represent something deeper:
 how a team chooses to take care of its system over time.
 
+<!--more-->
+
 The final quality of a software product is very similar to a person's health.
 It does not depend on a single check.
 It is the result of daily prevention and continuous observation.

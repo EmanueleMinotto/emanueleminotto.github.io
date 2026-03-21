@@ -11,6 +11,7 @@ title: "My front end development system"
 
 Hi all, I'm preparing a long post in these days, so, to fill this time, I'll show you how I work with the front end side of a website using the Symfony 2 framework.
 
+<!--more-->
 
 I'm not one of those guys who think the core logic behind a website should switch from the server to the client, and I'll ensure you it will never happen completely, this is why I'm using a PHP framework to explain a faster front end development system.
 
@@ -28,10 +29,10 @@ or if you wish to use it in [Silex](http://silex.sensiolabs.org/), try my [Faker
 
 Before passing out from the server side I want to add some utilities:
 
-* [Twig cache extension](https://github.com/asm89/twig-cache-extension): I use this extension with the [LiipDoctrineCacheBundle](https://github.com/liip/LiipDoctrineCacheBundle), so it's useless in the development environment, but in production the content is cached and doesn't need to be recalculated <script src="https://gist.github.com/EmanueleMinotto/6192d11250d4dd033f4a.js"></script>
-* Twig Text extension: this is included in the symfony standard edition but, I don't know why, it's not included in the Twig extensions and then you should add it to your main bundle in the `Resources/config/services.yml` file <script src="https://gist.github.com/EmanueleMinotto/b865b264df5e0eae03b7.js"></script>
-* [Twig data URI extension](https://github.com/romainneutron/TwigExtension-DataUri): if you wish to hide things like images path in the filesystem or the web URL you can use this extension <script src="https://gist.github.com/EmanueleMinotto/06bb15e60f315a88096e.js"></script>
-* [MobileDetectBundle](https://github.com/suncat2000/MobileDetectBundle): I think it's useful if you wish to define something in mobile mode only or in desktop mode only, it adds some useful Twig functions like `is_mobile()` or `is_device('iPhone')`
+- [Twig cache extension](https://github.com/asm89/twig-cache-extension): I use this extension with the [LiipDoctrineCacheBundle](https://github.com/liip/LiipDoctrineCacheBundle), so it's useless in the development environment, but in production the content is cached and doesn't need to be recalculated <script src="https://gist.github.com/EmanueleMinotto/6192d11250d4dd033f4a.js"></script>
+- Twig Text extension: this is included in the symfony standard edition but, I don't know why, it's not included in the Twig extensions and then you should add it to your main bundle in the `Resources/config/services.yml` file <script src="https://gist.github.com/EmanueleMinotto/b865b264df5e0eae03b7.js"></script>
+- [Twig data URI extension](https://github.com/romainneutron/TwigExtension-DataUri): if you wish to hide things like images path in the filesystem or the web URL you can use this extension <script src="https://gist.github.com/EmanueleMinotto/06bb15e60f315a88096e.js"></script>
+- [MobileDetectBundle](https://github.com/suncat2000/MobileDetectBundle): I think it's useful if you wish to define something in mobile mode only or in desktop mode only, it adds some useful Twig functions like `is_mobile()` or `is_device('iPhone')`
 
 After these utilities I suggest you to install two tools, the first one is called [FkrCssURLRewriteBundle](https://github.com/fkrauthan/FkrCssURLRewriteBundle) and it's used to fix relative paths in assets, the second one is [toopay/assetic-minifier](https://github.com/toopay/assetic-minifier) because I've seen that after [cssmin](https://code.google.com/p/cssmin/) minification, the output isn't always the same.
 

@@ -7,6 +7,8 @@ title: "Link Analysis Ranking"
 
 Some years ago I found myself making a small seminar for the course Algorithms and Data Structures II, having had very conceptual explain it in half an hour.
 
+<!--more-->
+
 The goal of Link Analysis Ranking algorithms consists in inferring the importance of a web page based on the topological structure of the graph of the World Wide Web. Link analysis ranking algorithms are widely used by search engines to make the sort of web pages.
 
 The web is then represented by a graph in which the nodes represent the HTML pages and anchors are the links between pages (indicated by the anchor `<a href='...'>`), each node points to zero or more links (_forward links_) and is pointed by zero or more links (_backward links_).

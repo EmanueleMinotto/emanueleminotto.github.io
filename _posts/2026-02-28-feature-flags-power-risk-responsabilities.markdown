@@ -10,6 +10,8 @@ You've just deployed a new feature.<br>
 Tests are green. The code review passed. Everything looked fine in staging.<br>
 Ten minutes later, the first reports start coming in.
 
+<!--more-->
+
 It's not a total crash.<br>
 It's not even a blocking bug.<br>
 But something isn't right. And it's now in production.

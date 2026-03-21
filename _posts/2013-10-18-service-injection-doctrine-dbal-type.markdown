@@ -7,6 +7,8 @@ title: "Service Injection in Doctrine DBAL Type"
 
 When you think of a Doctrine 2 DBAL Type you think of an atomic thing, but how can you work programmatically on this type without defining an event?
 
+<!--more-->
+
 A DBAL Type doesn't allow access to the Symfony 2 service container, you must use a hack. But before this let me explain the classic way (using events), why you should use this hack and why you shouldn't.
 
 The classic way is defined in the Symfony 2 Cookbook: [How to Register Event Listeners and Subscribers](http://symfony.com/doc/current/cookbook/doctrine/event_listeners_subscribers.html)

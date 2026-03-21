@@ -7,6 +7,7 @@ title: "Casting: value objects, validation, trust levels & debugging"
 
 A practice I'm testing in these days is to cast PHP primitives right after parameters declaration.
 
+<!--more-->
 
 I was used to think that casting was something really wrong, like the `atoi` and `itoa` C functions to convert integers from/to array of chars (strings).
 
@@ -40,7 +41,7 @@ For example:
         return preg_replace('/^(https?:)?(\/\/.*)/i', "$2", $url);
     }
 
-What's happening here? Given an URL like *http://www.example.com*, this method will return the URL without the scheme, so *//www.example.com*. Pretty simple.
+What's happening here? Given an URL like *http://www.example.com*, this method will return the URL without the scheme, so _//www.example.com_. Pretty simple.
 
 The interesting thing is at the first implementation line, because if the method receive an object instance implementing the `__toString` method, something like a `Zend\Uri\UriInterface`, than it will be implicitly converted and our method still works correctly.
 

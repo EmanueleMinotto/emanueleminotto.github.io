@@ -1,4 +1,5 @@
 baseurl: ""
+excerpt_separator: "<!--more-->"
 description: Just another developer
 email: minottoemanuele@gmail.com
 markdown: kramdown

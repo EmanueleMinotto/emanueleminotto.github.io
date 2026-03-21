@@ -10,6 +10,8 @@ tests, architecture, code reviews, or reliability metrics.
 
 Much more rarely do we think about Git history.
 
+<!--more-->
+
 And yet it is one of the most underestimated assets of a project. Git
 history is not just a record of what changed in the code: it is the
 **evolutionary memory of the system**. It tells how the software grew,

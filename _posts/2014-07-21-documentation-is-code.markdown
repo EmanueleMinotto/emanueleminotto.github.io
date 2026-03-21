@@ -7,6 +7,8 @@ title: "Documentation is code"
 
 Finally I found a new argument, after months and months, and it's the documentation.
 
+<!--more-->
+
 In my priority list there's always an initial point: the documentation, if it's missing then the library isn't so good as it seems. Why? Simply because we aren't in the mind of the developer that works on that library. I know you understand and watch for it too.
 
 A question I always asked myself is: while a developer is working on a source code, is the documentation the first thing he writes? I must admit it, not for me, and the reasons are many: focus on the logic, times, deadlines, etc... and as always the documentation is the last thing to do, if I have time.
@@ -27,8 +29,8 @@ Let's start with models, if I write this piece of code:
 
 there's still nothing of what I'll talk about but we already have a good description of our entity:
 
-* we are talking about the table posts, that has four columns
-* this table will be used to contain a set of Post objects
+- we are talking about the table posts, that has four columns
+- this table will be used to contain a set of Post objects
 
 Not so much you think? Wait to work with a big database schema or a legacy project, then you'll understand the importance of these few lines.
 
@@ -76,9 +78,9 @@ Documentation shouldn't replace all the code, I'm against things like [this](htt
 
 ### References
 
-* [https://github.com/schmittjoh/JMSSerializerBundle](https://github.com/schmittjoh/JMSSerializerBundle)
-* [<span style="line-height: 1.5em;">https://github.com/jbafford/PasswordStrengthBundle</span>](https://github.com/jbafford/PasswordStrengthBundle)
-* [<span style="line-height: 1.5em;">https://github.com/stof/StofDoctrineExtensionsBundle</span>](https://github.com/stof/StofDoctrineExtensionsBundle)
-* [<span style="line-height: 1.5em;">https://github.com/rdohms/dms-filter-bundle</span>](https://github.com/rdohms/dms-filter-bundle)
-* [<span style="line-height: 1.5em;">https://github.com/mmoreram/ControllerExtraBundle</span>](https://github.com/mmoreram/ControllerExtraBundle)
-* [<span style="line-height: 1.5em;">https://doctrine-orm.readthedocs.org/en/latest/reference/annotations-reference.html</span>](https://doctrine-orm.readthedocs.org/en/latest/reference/annotations-reference.html)
+- [https://github.com/schmittjoh/JMSSerializerBundle](https://github.com/schmittjoh/JMSSerializerBundle)
+- [<span style="line-height: 1.5em;">https://github.com/jbafford/PasswordStrengthBundle</span>](https://github.com/jbafford/PasswordStrengthBundle)
+- [<span style="line-height: 1.5em;">https://github.com/stof/StofDoctrineExtensionsBundle</span>](https://github.com/stof/StofDoctrineExtensionsBundle)
+- [<span style="line-height: 1.5em;">https://github.com/rdohms/dms-filter-bundle</span>](https://github.com/rdohms/dms-filter-bundle)
+- [<span style="line-height: 1.5em;">https://github.com/mmoreram/ControllerExtraBundle</span>](https://github.com/mmoreram/ControllerExtraBundle)
+- [<span style="line-height: 1.5em;">https://doctrine-orm.readthedocs.org/en/latest/reference/annotations-reference.html</span>](https://doctrine-orm.readthedocs.org/en/latest/reference/annotations-reference.html)

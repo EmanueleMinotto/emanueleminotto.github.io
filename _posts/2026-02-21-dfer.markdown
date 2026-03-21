@@ -9,6 +9,8 @@ Software quality doesn't improve because one day we decide to run a massive refa
 It improves when we build a system that prevents the code from getting worse and gradually, almost inevitably, pushes it to get better.<br>
 Linting, when used strategically, can become exactly that system.
 
+<!--more-->
+
 Not a tool to argue about semicolons.
 Not a stylistic checklist.
 But an evolutionary mechanism.

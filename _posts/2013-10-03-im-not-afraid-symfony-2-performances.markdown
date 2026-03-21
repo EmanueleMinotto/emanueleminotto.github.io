@@ -7,18 +7,20 @@ title: "I'm not afraid of Symfony 2 performances"
 
 It's impossible to write an absolute benchmark for a PHP framework:
 
-* project code performances
-* project code type (with very much elaboration or a single echo)
-* vendor code size and performances
-* framework overhead
-* network time
-* number of requests per second
-* cache type and usage
-* hardware time
-* Memory & CPU
-* DBMS
-* number and type of operations on the database
-* etc...
+<!--more-->
+
+- project code performances
+- project code type (with very much elaboration or a single echo)
+- vendor code size and performances
+- framework overhead
+- network time
+- number of requests per second
+- cache type and usage
+- hardware time
+- Memory & CPU
+- DBMS
+- number and type of operations on the database
+- etc...
 
 These are only some of the aspects you need to consider in writing and reading a valid benchmark test: it's impossible to make the right choice if the first thing you consider are performances.
 

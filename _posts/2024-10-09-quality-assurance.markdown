@@ -8,6 +8,8 @@ title: "Bye business logic, welcome Quality Assurance"
 Woah! Long time since last time I've written a blog post, may be worth to write down an update.
 What happened since my last post? I've lost a lot of time in failing ideas 😅 and many things changed in my personal life too.
 
+<!--more-->
+
 I'm considering to restore this blog, it's something I liked to use and with this design, really feels like a personal notebook.
 
 Let's switch to something more interesting... why Quality Assurance? Because since 5-6 years I've changed role and now I consider myself a QA developer.
