@@ -5,6 +5,10 @@ layout: default
     <div class="post">
         <h2 class="post-title">{{ page.title }}</h2>
         <p class="post-data">
+            {% assign words = content | number_of_words %}
+            {% assign reading_time = words | divided_by: 200 %}
+            {% if reading_time == 0 %}{% assign reading_time = 1 %}{% endif %}
+            <span class="post-reading-time"><i class="fa-regular fa-clock"></i> {{ reading_time }} min read</span>
             <span class="postcategory">
                 {% for category in page.categories %}
                     {% unless forloop.first %},{% endunless %}

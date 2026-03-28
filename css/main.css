@@ -414,7 +414,7 @@ input[type="submit"]:hover {
     overflow: hidden;
     padding-top: 8px;
     font:
-        normal 1.15em/1.6em 'Lora',
+        normal 1.15em/1.6em "Lora",
         Georgia,
         serif;
 }
@@ -476,7 +476,7 @@ input[type="submit"]:hover {
     text-decoration: none;
 }
 .post-data span {
-    padding: 0 0 3px 19px;
+    padding: 0 0 3px 3px;
     margin-right: 12px;
 }
 .postauthor {
@@ -502,6 +502,12 @@ input[type="submit"]:hover {
 }
 .postcomment:hover {
     background-position: 0 -425px;
+}
+.post-reading-time {
+    padding-left: 0;
+}
+.post-reading-time i {
+    margin-right: 3px;
 }
 
 .more-link {
