@@ -481,24 +481,21 @@ input[type="submit"]:hover {
 }
 .postauthor {
     background: url(/assets/img/postdata-icons.png) no-repeat 0 -512px;
+    padding-left: 19px;
 }
 .postauthor:hover {
     background: url(/assets/img/postdata-icons.png) no-repeat 0 -619px;
 }
-.postcategory {
-    background: url(/assets/img/postdata-icons.png) no-repeat;
-}
-.postcategory:hover {
-    background-position: 0 -253px;
-}
 .posttag {
     background: url(/assets/img/postdata-icons.png) no-repeat 0 -86px;
+    padding-left: 19px;
 }
 .posttag:hover {
     background-position: 0 -339px;
 }
 .postcomment {
     background: url(/assets/img/postdata-icons.png) no-repeat 0 -172px;
+    padding-left: 19px;
 }
 .postcomment:hover {
     background-position: 0 -425px;
