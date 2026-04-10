@@ -1,5 +1,5 @@
 ---
-categories: tooling api mock testing quality documentation
+categories: tooling api mock testing documentation
 date: 2026-04-10 00:00:00
 layout: post
 title: "Chameleon: a mock server built from your schemas"
