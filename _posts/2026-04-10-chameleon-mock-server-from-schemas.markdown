@@ -8,7 +8,7 @@ title: "Chameleon: a mock server built from your schemas"
 Anyone who has worked on a frontend or mobile app knows this: waiting for a backend to be "ready" is one of the fastest ways to slow everything down.<br>
 And even when the backend exists, what you really need for productive development is often missing: realistic responses, reproducible edge cases, coherent data across endpoints, and a simple way to switch between mock and real upstream behavior.
 
-That's where [**Chameleon**](https://github.com/EmanueleMinotto/chameleon) comes in: an open-source mock/faker server that generates credible responses directly from your schemas, with a workflow designed for both local development and deployment (including Vercel). <!--more-->
+That's where [**Chameleon**](https://github.com/EmanueleMinotto/chameleon) comes in: an open-source mock/faker server that generates credible responses directly from your schemas, with a workflow designed for both local development and remote usage. <!--more-->
 
 <img src="https://raw.githubusercontent.com/EmanueleMinotto/chameleon/main/chameleon.png" alt="Chameleon cover" align="right" width="220">
 
