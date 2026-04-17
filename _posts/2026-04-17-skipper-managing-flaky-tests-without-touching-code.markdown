@@ -11,6 +11,8 @@ Anyone who works with automated test suites knows the frustration of a *flaky* t
 
 ## What is Skipper
 
+<img src="/assets/2026-04-17-skipper-managing-flaky-tests-without-touching-code/logo.png" alt="Skipper" align="right" width="200">
+
 Skipper is an open-source library *(MIT license)* that lets you enable and disable tests directly from a **shared Google Spreadsheet**, without touching the source code. Open the sheet, set an expiry date for the test you want to skip, and the next time the pipeline runs the test is automatically ignored.
 
 > The idea is simple: separating the *configuration* of test execution from its *implementation*.
