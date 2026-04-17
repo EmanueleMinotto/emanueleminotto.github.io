@@ -5,7 +5,7 @@ layout: post
 title: "Skipper: managing flaky tests without touching the code"
 ---
 
-Anyone who works with automated test suites knows the frustration of a *flaky* test: one that fails every now and then for no apparent reason, blocks the pipeline, and distracts the whole team. The classic fix is to comment out the test, push a commit, and open a PR - a slow and noisy process for a problem that is often temporary. **Skipper** was built to eliminate that friction.
+Anyone who works with automated test suites knows the frustration of a *flaky* test: one that fails every now and then for no apparent reason, blocks the pipeline, and distracts the whole team. The classic fix is to comment out the test, push a commit, and open a PR - a slow and noisy process for a problem that is often temporary. [**Skipper**](https://get-skipper.github.io/) was built to eliminate that friction.
 
 <!--more-->
 
