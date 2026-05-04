@@ -559,6 +559,51 @@ a.more-link:hover {
 /* content end
 -------------------------------------------------*/
 
+/* content-wrapper for home page layout
+-------------------------------------------------*/
+#content-wrapper {
+    overflow: hidden;
+}
+
+#content-wrapper #archive h3 {
+    font:
+        bold 1.5em/1em Arial,
+        Helvetica,
+        sans-serif;
+    background: url(/assets/img/sidebar-dots.png) repeat-x 0 bottom;
+    padding: 0 0 10px;
+    margin: 0 0 10px;
+    text-shadow: 0px 1px 4px #dfdfbb;
+}
+
+#content-wrapper #archive ul li {
+    font-size: 0.95em;
+    line-height: 1.6em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+#content-wrapper #archive ul li a {
+    flex: 1;
+    text-decoration: none;
+}
+
+#content-wrapper #archive ul li a:hover {
+    color: #ca6c18;
+}
+
+#content-wrapper .archive-date {
+    color: #b09473;
+    font-size: 0.9em;
+    white-space: nowrap;
+    margin-left: 10px;
+}
+
+/* content-wrapper end
+-------------------------------------------------*/
+
 /* comments
 -------------------------------------------------*/
 #comments,
