@@ -1,0 +1,15 @@
+<div id="cookie-banner" style="display:none; position:fixed; bottom:0; left:0; right:0; background:#222; color:#eee; padding:1rem 1.5rem; font-size:.875rem; z-index:9999; display:flex; align-items:center; justify-content:space-between; gap:1rem; flex-wrap:wrap;">
+  <span>This site uses technical cookies. By continuing to browse you accept their use.</span>
+  <button id="cookie-accept" style="background:#fff; color:#222; border:none; padding:.4rem 1rem; cursor:pointer; font-size:.875rem; white-space:nowrap;">Accept</button>
+</div>
+<script>
+  (function() {
+    if (localStorage.getItem('cookie_consent') === 'true') return;
+    var banner = document.getElementById('cookie-banner');
+    banner.style.display = 'flex';
+    document.getElementById('cookie-accept').addEventListener('click', function() {
+      localStorage.setItem('cookie_consent', 'true');
+      banner.style.display = 'none';
+    });
+  })();
+</script>
