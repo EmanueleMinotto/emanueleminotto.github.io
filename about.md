@@ -12,6 +12,8 @@ Not that kind of blog where someone write what happened during the day, but a bl
 
 If you are just looking for my CV: [linkedin.com/in/EmanueleMinotto](https://linkedin.com/in/EmanueleMinotto)
 
+Curious about what I actually build? Peek at my code on GitHub: [github.com/EmanueleMinotto](https://github.com/EmanueleMinotto)
+
 You can contact me for opinions on what you want, suggestions, critics to this blog, jobs, to report interesting links, to request links that may interest you or just to chat.
 
 See ya! :)
