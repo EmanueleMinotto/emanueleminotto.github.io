@@ -50,6 +50,8 @@ It isn't free: you need dedicated accounts, a way to recognise synthetic traffic
 
 ## SLOs: acceptance criteria that never expire
 
+![A monitoring dashboard on a screen, with metric tiles and trend lines](/assets/2026-10-29-observability-is-a-testing-strategy/dashboard.jpg)
+
 An acceptance criterion is checked once, before the release. An SLO - *99.5% of checkouts succeed within two seconds over 28 days* - is the same sentence, checked for as long as the feature exists. And the error budget is the most honest answer I know to [How Much Is a Bug Worth?](/blog/how-much-is-a-bug-worth): it turns "how much quality is enough" from opinion into a number agreed in advance.
 
 ---
